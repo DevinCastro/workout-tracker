@@ -4,7 +4,6 @@ const { Workout } = require('../models')
 router.get('/workouts', (req, res) => {
   // leave empty to get back everything
   Workout.find()
-    .populate('exercises')
     .then(item => res.json(item))
     .catch(err => console.log(err))
 })
