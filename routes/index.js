@@ -1,9 +1,13 @@
 const router = require('express').Router()
 
 
-// router.use('/', require('./viewRoutes.js'))
+// link api routes
 router.use('/api', require('./workoutRoutes.js'))
-router.use('/api', require('./exerciseRoutes.js'))
+
+// link html routes
+router.use('/', require('./htmlRoutes.js'))
+
+
 
 
 module.exports = router

@@ -4,14 +4,14 @@ const { Workout } = require('../models')
 router.get('/workouts', (req, res) => {
   // leave empty to get back everything
   Workout.find()
-    .then(item => res.json(item))
+    .then(workout => res.json(workout))
     .catch(err => console.log(err))
 })
 
 
 router.post('/workouts', (req, res) => {
   Workout.create(req.body)
-    .then(item => res.json(item))
+    .then(workout => res.json(workout))
     .catch(err => console.log(err))
 })
 
