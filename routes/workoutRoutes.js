@@ -8,6 +8,13 @@ router.get('/workouts', (req, res) => {
     .catch(err => console.log(err))
 })
 
+router.get('/workouts/range', (req, res) => {
+  // leave empty to get back everything
+  Workout.find()
+    .then(workout => res.json(workout))
+    .catch(err => console.log(err))
+})
+
 
 router.post('/workouts', (req, res) => {
   Workout.create(req.body)
@@ -21,10 +28,14 @@ router.put('/workouts/:id', (req, res) => {
     .catch(err => console.log(err))
 })
 
-router.delete('/workouts/:id', (req, res) => {
-  Workout.findByIdAndDelete(req.params.id)
-    .then(() => res.sendStatus(200))
-    .catch(err => console.log(err))
-})
+
+
+
+
+// router.delete('/workouts/:id', (req, res) => {
+//   Workout.findByIdAndDelete(req.params.id)
+//     .then(() => res.sendStatus(200))
+//     .catch(err => console.log(err))
+// })
 
 module.exports = router

@@ -159,7 +159,7 @@ function populateChart(data) {
     },
     options: {
       title: {
-        display: true,
+        display: true, 
         text: "Excercises Performed"
       }
     }
