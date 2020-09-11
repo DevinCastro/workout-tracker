@@ -2,6 +2,7 @@ const router = require('express').Router()
 const { join } = require('path')
 
 
+// these routes link all out different html files
 
 router.get('/exercise', (req, res) => {
   res.sendFile(join(__dirname, '..', 'public', 'exercise.html'))

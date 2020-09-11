@@ -1,5 +1,7 @@
 const { model, Schema } = require('mongoose')
 
+
+// create the new schema for Workout that has keys for day and exercises.  Notice exercises is an array that holds the information for the exercise the user is doing.  We can push in multiple exersices into one workout.
 const Workout = new Schema({
   day: {
     type: Date,
