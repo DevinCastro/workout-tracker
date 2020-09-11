@@ -11,5 +11,5 @@ This full stack application uses, node.js and express to create the server.  We 
 ## Usage:
 To create a workout, simply click "New Workout".  Select the type of exercise, and then fill in the proper fields to define the exercise you did.  Add as many exercises as you want and click complete when you finish.  Any time you come back to the application it shows the previous workout you were doing, and you can either continue that workout or make a new one.  To view the stats just click the "dashboard" button in the nav bar and it will display all the stats from your previous workouts.
 
-![Screenshot](./preview/ScreenShot1.png)
-![Screenshot](./preview/ScreenShot2.png)
+![Screenshot](./photos/screenShot1.png)
+![Screenshot](./photos/screenShot2.png)
